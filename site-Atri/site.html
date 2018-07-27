@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>ATRI</title>
+    <link rel="stylesheet" href="sitestyle.css">
+    <script>
+        var slideIndex = 1
+            showDivs(slideIndex)
+        function plusDivs(n) {
+            showDivs(slideIndex += n)
+        }    
+        function showDivs(n) {
+            var i
+            var x = document.getElementsByClassName("mySlides")
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"
+            }
+                x[slideIndex-1].style.display = "block"
+            }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header1 clearfix">
+            <div class="logo">
+                <h1>ATRIA</h1>
+                <h4>АТРИ ЕООД СОФИЯ</h4>
+            </div>
+            <div class="navi">
+                <ul>
+                    <li><a href="">НАЧАЛО</a></li>
+                    <li><a href="">ЗА НАС</a></li>
+                    <li><a href="">ПРОДУКТИ</a></li>
+                    <li><a href="">УСЛУГИ</a></li>
+                    <li><a href="">ГАЛЕРИЯ</a></li>
+                    <li><a href="">СЪБИТИЯ</a></li>
+                    <li><a href="">ПАРТНЬОРИ</a></li>
+                    <li><a href="">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header2">
+            <img class="mySlides" src="color.jpg">
+            <img class="mySlides" src="color-1.jpg">
+            <img class="mySlides" src="color-2.jpg">
+            <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivs(-1)">&#10095;</button>
+        </div>
+    </header>
+    <article>
+            <div class="article1">
+                <h2>ПРОДУКТИ</h2>
+                <p>Добрият прием на тези продукти се дължи на два фактора: първо - високото им качество съчетано с екологичност 
+                        и второ - добрите цени, които успяваме да поддържаме благодарение на директната връзка с производителите.</p>
+            </div>
+            <div class="article2">
+                <div>
+                    <img src="color.jpg">
+                    <a href=""><span class="item">ИНТЕРИОРНИ БОИ</span></a>
+                </div>
+                <div>
+                    <img src="color.jpg">
+                    <a href=""><span class="item">ЕКСТЕРИОРНИ БОИ</span></a>
+                </div>
+                <div>
+                    <img src="color.jpg">
+                    <a href=""><span class="item">БОИ И ЛАКОВЕ</span></a>
+                </div>       
+            </div>
+            <div class="button">
+                <a href="">ВСИЧКИ ПРОДУКТИ</a>
+            </div>
+    </article>
+    <footer>
+        <div class="footer1">
+            <h2>ЗА НАС</h2>
+            <p>Арти ЕООД е дружество с ограничена отговорност, регистрирано по български търговски закон през 1996г. За сравнително 
+                краткото си съществуване фирмата успя да наложи на българския пазар продуктите на италиански фирми.</p>
+        </div>
+        <div class="button">
+            <a href="">ПРОЧЕТИ ПОВЕЧЕ</a>
+        </div>
+        <div class="footer2">
+            <img src="color-1.jpg">
+        </div>
+        <div class="footer3">
+            <p>Атри ЕООД &#169 2018.Всички правава запазени.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

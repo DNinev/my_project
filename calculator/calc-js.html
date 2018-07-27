@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>calculator</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function(e) {
+                $('.btn').click(function(e) {
+                    $('.result').val($('.result').val() + $(this).val())
+                })
+    
+                $('.btn-1').click(function(e) {
+                    $('.result').val('')
+                })
+    
+                $('.btn-2').click(function(e){
+                    $('.result').val(eval($('.result').val()))
+                })
+            })
+        </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .calculator{
+            margin: 0 auto;
+            width: 272px;
+            height: 327px;
+            background-color: rgb(211, 210, 210);
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .result{
+            width: 270px;
+            height: 50px;
+            text-align: right;
+            color: rgb(199, 50, 50);
+            font-size: 35px;
+            border: 1px solid black;
+        }
+        .btn{
+            width: 65px;
+            height: 50px;
+            font-size: 25px;
+            margin-top: 5px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        .btn-1, .btn-2{
+            width: 134px;
+            height: 50px;
+            font-size: 25px;
+            margin-top: 5px;
+            border: 1px solid black;
+            background-color: rgb(199, 50, 50);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text" class="result">
+        </div>
+        <div>
+            <input type="button" class="btn" value="7">
+            <input type="button" class="btn" value="8">
+            <input type="button" class="btn" value="9">
+            <input type="button" class="btn" value="+">
+            <input type="button" class="btn" value="4">
+            <input type="button" class="btn" value="5">
+            <input type="button" class="btn" value="6">
+            <input type="button" class="btn" value="-">
+            <input type="button" class="btn" value="1">
+            <input type="button" class="btn" value="2">
+            <input type="button" class="btn" value="3">
+            <input type="button" class="btn" value="*">
+            <input type="button" class="btn" value="0">
+            <input type="button" class="btn" value="00">
+            <input type="button" class="btn" value=".">
+            <input type="button" class="btn" value="/">
+            <input type="button" class="btn-1" value="Clear">
+            <input type="button" class="btn-2" value="=">
+        </div>
+    </div>
+</body>
+
+</html>

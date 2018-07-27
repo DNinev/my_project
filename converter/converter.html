@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>converter</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .content{
+            position: relative;
+            margin: 100px auto;
+            padding: 25px;
+            width: 500px;
+            height: 335px;
+            background-color: rgb(4, 4, 121);
+            border: 0;
+            border-radius: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            margin: 0 0 20px 0;
+        }
+
+        .converter p{
+            color: white;
+            font-size: 20px;
+        }
+
+        input{
+            width: 200px;
+            height: 35px;
+            font-size: 20px;
+            border: 0;
+            border-radius: 10px;
+            padding: 3px;
+        }
+
+        button{
+            border: 0;
+            border-radius: 10px;
+            background-color: orange;
+            font-size: 20px;
+            width: 130px;
+            height: 40px;
+            color: white;
+            text-align: center;
+
+        }
+
+        .converter{
+            float: left;
+            position: relative;
+        }
+
+        .valute{
+            float: right;
+            position: relative;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Currency Converter</h1>
+        <div class="converter">
+            <p>BGN: <input type="text" placeholder="BGN" id="bgn"></p>
+            <p>EUR: <input type="text" placeholder="EUR" id="euro"></p>
+            <p>GBP: <input type="text" placeholder="GBP" id="gbp"></p>
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div class="valute">
+            <p>EUR: 1.95583</p>
+            <p>GBP: 2.20115</p>
+        </div>
+    </div>
+
+    <script>
+        function convert(){
+            let bgn = document.getElementById("bgn").value
+            let eur = (bgn / 1.95583).toFixed(2)
+            let gbp = (bgn / 2.20115).toFixed(2)
+            document.getElementById("euro").value = eur
+            document.getElementById("gbp").value = gbp
+        }
+    </script>
+</body>
+
+</html>
