@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("pic/wall.jpg");
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    background-image: url("pic/pic.jpg");
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid rgb(90, 90, 90);
+}
+
+.navbar {
+    border-bottom: 2px solid rgb(110, 110, 110);
+}
+
+.navbar-nav li a {
+    color: rgb(255, 255, 255) !important;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.navbar-nav li a:hover {
+    background-color: rgb(80, 80, 80) !important;
+    border-radius: 5px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.profile {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.profile-photo img {
+    margin-top: 150px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    transition: transform .3s;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.profile-name h1 {
+    margin: 10px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.download-btn .btn {
+    padding: 7px 40px;
+    margin: 30px;
+}
+
+.social-btns {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.social-btns .btn {
+    margin: 0 10px;
+    font-size: 25px;
+    border-radius: 50px !important;
+}
+
+.section {
+    width: 1000px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.about, .skills {
+    border: 2px solid rgb(40, 167, 69);
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 rgb(199, 199, 199);
+    padding: 35px 15px;
+}
+
+.title {
+    padding-top: 80px;
+    text-align: center;
+    margin: 50px 0 25px 0;
+}
+
+.boxes .row {
+    margin: 20px 0;
+    box-shadow: 0 0 10px 0 rgb(199, 199, 199);
+    border-radius: 7px;
+}
+
+.boxes .row .left, .right {
+    padding: 35px 15px;
+    text-align: center;
+}
+
+.boxes .left {
+    color: rgb(255, 255, 255);
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills img {
+    width: 33px;
+}
+
+.contact {
+    border: 2px solid rgb(40, 167, 69);
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 rgb(199, 199, 199);
+    padding: 35px 25px;
+    margin-top: 150px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-2 {
+    text-align: center;
+}
+
+form .form-control {
+    border: 1px solid rgb(40, 167, 69);
+}
+
+.footer {
+    border-top: 2px solid rgb(110, 110, 110);
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.row, .contact {
+    background-color: rgb(255, 255, 255);
+}
+
+
